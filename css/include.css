@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+/*헤더*/
+#header{
+    background: #8c6149;
+}
+
+.hTop{
+    background: #333;
+    font-size: 12px;
+    padding: 10px;
+}
+.hTop li{
+    margin-right: 15px;
+}
+.hTop li:hover a{
+    text-decoration: underline;
+    color: #fedfa8;
+}
+.hTop a{
+    color: #fff;
+}
+.hTop02{
+    position: relative;
+}
+
+/*utill*/
+.utill{
+
+}
+.utill li{
+    float: left;
+}
+.utill li:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    background: #fff;
+    margin-left: 5px;
+}
+.utill li:last-child:after{
+    display: none;
+}
+.utill li a{}
+
+/*utill02*/
+.utill02{
+    float: right;
+    margin-right: 10px;
+}
+.utill02 li{
+    float: left;
+}
+.utill02 li:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    background: #fff;
+    margin-left: 5px;
+}
+.utill02 li:last-child:after{
+    display: none;
+}
+.utill02 li:last-child{
+    margin-right: 0;
+}
+.utill02 li a{}
+
+/*lang*/
+.lang{
+    float: right;
+}
+.lang li{
+    float: left;
+    margin-right: 5px;
+}
+.lang li a{}
+.lang li img{}
+
+
+/*hBottom*/
+.hBottom{
+    text-align: center;
+    position: relative;
+    padding: 5px;
+}
+.hMenu{
+    position: fixed;
+    top: 25px;
+    z-index: 15;
+}
+.on{
+    display: none;
+}
+.hMenu:hover .off{
+    display: none;
+}
+.hMenu:hover .on{
+    display: block;
+}
+#mySidenav{}
+
+.sidenav{
+    background: #333;
+    position: fixed;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    font-size: 25px;
+    overflow-x: hidden;
+    transition: width 0.5s;
+    padding-top: 60px;
+}
+.sidenav a{
+    width: 330px;
+    color: #888;
+    padding: 8px 8px 8px 32px;
+    line-height: 60px;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    width: 13px;
+}
+.sidenavbg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+.sidenav2,.sidenav3,.sidenav4,.sidenav5,.sidenav6,.sidenav7,.sidenav8,.sidenav9,.sidenav10{
+    background: #222;
+    position: fixed;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 49;
+    font-size: 14px;
+    overflow-x: hidden;
+    transition: width 0.5s;
+    padding-top: 60px;
+}
+.sidenav2 a,.sidenav3 a,.sidenav4 a,.sidenav5 a,.sidenav6 a,.sidenav7 a,.sidenav8 a,.sidenav9 a,.sidenav10 a{
+    color: #888;
+    width: 400px;
+    padding: 0 10px;
+    transition: 0.3s;
+    display: block;
+    margin-left: 50%;
+    margin-bottom: 36px;
+    margin-top: 20px;
+    line-height: 40px;
+}
+.sidenav2 a:hover,.sidenav3 a:hover,.sidenav4 a:hover,.sidenav5 a:hover,.sidenav6 a:hover,.sidenav7 a:hover,.sidenav8 a:hover,.sidenav9 a:hover,.sidenav10 a:hover{
+    color: #f1f1f1;
+}
+.sidenav2 .closebtn2,.sidenav3 .closebtn3,.sidenav4 .closebtn4,.sidenav5 .closebtn5,.sidenav6 .closebtn6,.sidenav7 .closebtn7,.sidenav8 .closebtn8,.sidenav9 .closebtn9,.sidenav10 .closebtn10{
+    position: absolute;
+    top: 0;
+    right: 1%;
+    font-size: 25px;
+    width: 15px;
+}
+
+/*footer*/
+
+#footer{
+    background-color: #1E1E1E;
+}
+
+.fTop{
+    background-color: #282828;
+    padding: 50px 0;
+}
+.fTop dl{
+    float: left;
+    color: #646464;
+    font-size: 13px;
+    margin-right: 100px;
+}
+.fTop dt{
+    background: url(../images/common/bar_snb.gif) no-repeat left bottom;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+}
+.fTop dd{
+    margin-left: 0;
+    line-height: 24px;
+}
+.fTop dd a{
+    color: #8a8a8a;
+}

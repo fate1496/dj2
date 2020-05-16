@@ -1,0 +1,218 @@
+@charset utf-8;
+
+/*컨테이너*/
+#container{}
+
+/*mainSlider*/
+.mainSlider .slick-slide{
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+.mainSlider .slick-slide img{
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+}
+.Arrow{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    top: 50%;
+    margin-top: -25px;
+    cursor: pointer;
+    color: #fff;
+}
+.prevBtn{
+    background: url(../images/common/pbtn.png) no-repeat;
+    left: 20px;
+}
+.nextBtn{
+    background: url(../images/common/nbtn.png) no-repeat;
+    right: 20px;
+}
+
+.mainSlider .slick-dots{
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    bottom: 30px;
+}
+.mainSlider .slick-dots .slick-active{
+    background: #fff;
+}
+.mainSlider .slick-dots li{
+    float: left;
+    border: 1px solid #fff;
+    text-indent: -9999px;
+    width: 30px;
+    height: 2px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.mainSlider .slick-dots button{
+    border: 0;
+    background: none;
+}
+
+/*mainCon01*/
+
+.mainCon01{
+    padding: 80px 0;
+    text-align: center;
+    background: #fedfa8;
+}
+.mainCon01 h2{
+    margin-bottom: 80px;
+    color: #473225;
+    font-size: 30px;
+}
+.mainCon01 h2 span{
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding: 20px 0;
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.con01{
+    margin-left: 3%;
+}
+.con01 li{
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 80px;
+    width: 22%;
+    height: 400px;
+}
+.con01 li:nth-child(4n){
+    margin-right: 0;
+}
+.con01 li a{
+    color: #222;
+}
+.con01 li img{
+    width: 100%;
+    display: block;
+}
+.con01 li p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.con01 li span{
+    font-size: 12px;
+    color: #444;
+    margin-bottom: 20px;
+}
+.con01 .on{
+    display: none;
+}
+.con01n1:hover .off, .con01n2:hover .off, .con01n3:hover .off, .con01n4:hover .off, .con01n5:hover .off, .con01n6:hover .off, .con01n7:hover .off, .con01n8:hover .off{
+    display: none;
+}
+.con01n1:hover .on, .con01n2:hover .on, .con01n3:hover .on, .con01n4:hover .on, .con01n5:hover .on, .con01n6:hover .on, .con01n7:hover .on, .con01n8:hover .on{
+    display: block;
+}
+/*mainCon02*/
+
+.mainCon02{
+    background: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+.mainCon02 h2{
+    margin-bottom: 80px;
+    color: #473225;
+    font-size: 30px;
+}
+.mainCon02 h2 span{
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    padding: 20px 0;   
+}
+
+.con02{}
+.con02 li{
+    float: left;
+    margin: 0;
+}
+.con02 li a{
+    color: #222;
+    height: 100%;
+    display: block;
+}
+.con02 li img{
+    width: 100%;
+}
+.con02 li p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.con02 li span{
+    font-size: 12px;
+    color: #444;
+    margin-bottom: 20px;
+    cursor: text;
+}
+
+.con02 .slick-dots{
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    bottom: -20px;
+}
+.con02 .slick-dots .slick-active{
+    background: #000;
+}
+.con02 .slick-dots li{
+    float: left;
+    border: 2px solid #000;
+    text-indent: -9999px;
+    width: 30px;
+    height: 2px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.con02 .slick-dots button{
+    border: 0;
+    background: none;
+}
+
+.con02 .Arrow{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    top: 50%;
+    margin-top: -50px;
+    cursor: pointer;
+    color: #fff;
+}
+.con02 .prevBtn{
+    background: url(../images/common/pbtn.png) no-repeat;
+    left: 20px;
+}
+.con02 .nextBtn{
+    background: url(../images/common/nbtn.png) no-repeat;
+    right: 20px;
+}
+
+.con02 .on{
+    display: none;
+}
+.con02b1:hover .off,.con02b2:hover .off,.con02b3:hover .off,.con02b4:hover .off,.con02b5:hover .off{
+    display: none;
+}
+.con02b1:hover .on,.con02b2:hover .on,.con02b3:hover .on,.con02b4:hover .on,.con02b5:hover .on{
+    display: block;
+}

@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>디제이2</title>
+        <link rel="stylesheet" type="text/css" href="css/default.css">
+        <link rel="stylesheet" type="text/css" href="css/include.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/slick.css">
+        <link rel="icon" sizes="16x16 32x32" href="favicon.ico">
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+        $(document).on('ready', function(){
+            $(".mainSlider").slick({
+                dots:true,
+                prevArrow:'<div class="Arrow prevBtn"></div>',
+                nextArrow:'<div class="Arrow nextBtn"></div>',
+                autoplay: true,
+                autoplaySpeed: 2000,
+                speed: 1000,
+                fade: true,
+                infinity: true,
+                cssEase:'linear'
+            });
+            /*사이드메뉴*/
+            $(".sidenavbg").hide();
+            $(".hMenu").click(function(){
+                $(".sidenavbg").fadeIn();
+                $(".sidenav").css("width","400px")
+            });
+            $(".closebtn,.sidenavbg").hover(function(){
+                $(".sidenavbg").fadeOut();
+                $(".sidenavbg").hover("width","0");
+                $(".sidenav").css("width","0")
+            });
+            /*사이드 2차메뉴*/
+            $(".outer").hover(function(){
+                $(".sidenav2").css("width","800px")
+            }); $(".closebtn2,.closebtn,.tee,.new,.best,.shirts,.knit,.pants,.shoes,.bag,.acc,.set,.sale,.sidenavbg").hover(function(){
+                $(".sidenavbg").hover("width","0");
+                $(".sidenav2").css("width","0")
+            });
+            $(".tee").hover(function(){
+                $(".sidenav3").css("width","800px")
+            }); $(".closebtn3,.closebtn,.outer,.new,.best,.shirts,.knit,.pants,.shoes,.bag,.acc,.set,.sale,.sidenavbg").hover(function(){
+                $(".sidenavbg").hover("width","0");
+                $(".sidenav3").css("width","0")
+            });
+            $(".shirts").hover(function(){
+                $(".sidenav4").css("width","800px")
+            }); $(".closebtn4,.closebtn,.tee,.new,.best,.outer,.knit,.pants,.shoes,.bag,.acc,.set,.sale,.sidenavbg").hover(function(){
+                $(".sidenavbg").hover("width","0");
+                $(".sidenav4").css("width","0")
+            });
+            $(".knit").hover(function(){
+                $(".sidenav5").css("width","800px")
+            }); $(".closebtn5,.closebtn,.tee,.new,.best,.outer,.shirts,.pants,.shoes,.bag,.acc,.set,.sale,.sidenavbg").hover(function(){
+                $(".sidenavbg").hover("width","0");
+                $(".sidenav5").css("width","0")
+            });
+            $(".pants").hover(function(){
+                $(".sidenav6").css("width","800px")
+            }); $(".closebtn6,.closebtn,.tee,.new,.best,.outer,.knit,.shirts,.shoes,.bag,.acc,.set,.sale,.sidenavbg").hover(function(){
+                $(".sidenavbg").hover("width","0");
+                $(".sidenav6").css("width","0")
+            });
+            $(".shoes").hover(function(){
+                $(".sidenav7").css("width","800px")
+            }); $(".closebtn7,.closebtn,.tee,.new,.best,.outer,.knit,.pants,.bag,.acc,.set,.sale,.shirts,.sidenavbg").hover(function(){
+                $(".sidenavbg").hover("width","0");
+                $(".sidenav7").css("width","0")
+            });
+            $(".bag").hover(function(){
+                $(".sidenav8").css("width","800px")
+            }); $(".closebtn8,.closebtn,.tee,.new,.best,.outer,.knit,.pants,.acc,.set,.sale,.shirts,.shoes,.sidenavbg").hover(function(){
+                $(".sidenavbg").hover("width","0");
+                $(".sidenav8").css("width","0")
+            });
+            $(".acc").hover(function(){
+                $(".sidenav9").css("width","800px")
+            }); $(".closebtn9,.closebtn,.tee,.new,.best,.outer,.knit,.pants,.shoes,.bag,.set,.sale,.sidenavbg").hover(function(){
+                $(".sidenavbg").hover("width","0");
+                $(".sidenav9").css("width","0")
+            });
+            $(".sale").hover(function(){
+                $(".sidenav10").css("width","800px")
+            }); $(".closebtn10,.closebtn,.tee,.new,.best,.outer,.knit,.pants,.shoes,.bag,.acc,.set,.sidenavbg").hover(function(){
+                $(".sidenavbg").hover("width","0");
+                $(".sidenav10").css("width","0")
+            });
+            
+            /*best 슬라이드*/
+                $('.con02').slick({
+                    dots:true,
+                    prevArrow:'<div class="Arrow prevBtn"></div>',
+                    nextArrow:'<div class="Arrow nextBtn"></div>',
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: false,
+                    autoplaySpeed: 2000,
+                });
+        });
+        </script>
+    </head>
+    <body>
+    <!--전체-->
+    <div id="wrap">
+        <div class="sidenavbg"></div>
+        <!--헤더-->
+        <header id="header">
+            <div class="hTop">
+                <div class="hTop02 inner cf">
+                <ul class="utill">
+                    <li>
+                        <a href="#">LOGIN</a>
+                    </li>
+                    <li>
+                        <a href="#">JOIN US</a>
+                    </li>
+                    <li>
+                        <a href="#">MY SHOP</a>
+                    </li>
+                    <li>
+                        <a href="#">CART / DELVERY</a>
+                    </li>
+                </ul>
+                <ul class="lang">
+                    <li>
+                        <a href="#">
+                            <img src="images/common/cn_22.png" alt="중국어">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/common/en_22.png" alt="영어">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/common/jp_22.png" alt="일본어">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="utill02">
+                    <li>
+                        <a href="#">SEARCH</a>
+                    </li>
+                    <li>
+                        <a href="#">COUPON / MEMBERSHIP</a>
+                    </li>
+                    <li>
+                        <a href="#">REVIEW</a>
+                    </li>
+                    <li>
+                        <a href="#">CUSTOMER Q&#38;A</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="hBottom">
+                <div class="hMenu">
+                    <a href="#">
+                        <img src="images/common/Menuimg01.png" class="off" alt="메뉴">
+                        <img src="images/common/Menuimg02.png" class="on" alt="메뉴">
+                    </a>
+                </div>
+                <!--사이드메뉴-->
+                    <div id="mySidenav" class="sidenav">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                      <a href="#" class="new">NEW ARRIVALS</a>
+                      <a href="#" class="best">BEST</a>
+                      <a href="#" class="outer">OUTER</a>
+                      <a href="#" class="tee">T-SHIRT</a>
+                      <a href="#" class="shirts">SHIRTS</a>
+                      <a href="#" class="knit">KNIT</a>
+                      <a href="#" class="pants">PANTS</a>
+                      <a href="#" class="shoes">SHOES</a>
+                      <a href="#" class="bag">BAG</a>
+                      <a href="#" class="acc">ACC</a>
+                      <a href="#" class="set">COORDI SET</a>
+                      <a href="#" class="sale">SALE</a>
+                    </div>
+                <!--사이드메뉴-->
+                <!--OUTER MENU-->
+                    <div id="mySidenav2" class="sidenav2">
+                      <a href="javascript:void(0)" class="closebtn2" onclick="closeNav()">&times;</a>
+                      <a href="#">자켓/블레이저</a>
+                      <a href="#">코트</a>
+                      <a href="#">가디건</a>
+                      <a href="#">VEST</a>
+                      <a href="#">패딩/무스탕</a>
+                    </div>
+                <!--OUTER MENU-->
+                <!--TEE MENU-->
+                    <div id="mySidenav3" class="sidenav3">
+                      <a href="javascript:void(0)" class="closebtn3" onclick="closeNav()">&times;</a>
+                      <a href="#">반팔티</a>
+                      <a href="#">7부/긴팔티</a>
+                      <a href="#">롱슬리브</a>
+                      <a href="#">나시</a>
+                      <a href="#">후드/맨투맨</a>
+                    </div>
+                <!--TEE MENU-->
+                <!--SHIRTS MENU-->
+                    <div id="mySidenav4" class="sidenav4">
+                      <a href="javascript:void(0)" class="closebtn4" onclick="closeNav()">&times;</a>
+                      <a href="#">베이직셔츠</a>
+                      <a href="#">스트라이프셔츠</a>
+                      <a href="#">체크셔츠</a>
+                      <a href="#">데님셔츠</a>
+                    </div>
+                <!--SHIRTS MENU-->
+                <!--KNIT MENU-->
+                    <div id="mySidenav5" class="sidenav5">
+                      <a href="javascript:void(0)" class="closebtn5" onclick="closeNav()">&times;</a>
+                      <a href="#">니트</a>
+                      <a href="#">폴라</a>
+                      <a href="#">베스트</a>
+                    </div>
+                <!--KNIT MENU-->
+                <!--PANTS MENU-->
+                    <div id="mySidenav6" class="sidenav6">
+                      <a href="javascript:void(0)" class="closebtn6" onclick="closeNav()">&times;</a>
+                      <a href="#">반바지</a>
+                      <a href="#">진/데님</a>
+                      <a href="#">슬랙스/와이드팬츠</a>
+                      <a href="#">디스트로진</a>
+                      <a href="#">면바지</a>
+                    </div>
+                <!--PANTS MENU-->
+                <!--SHOES MENU-->
+                    <div id="mySidenav7" class="sidenav7">
+                      <a href="javascript:void(0)" class="closebtn7" onclick="closeNav()">&times;</a>
+                      <a href="#">워커/부츠</a>
+                      <a href="#">로퍼</a>
+                      <a href="#">구두</a>
+                      <a href="#">스니커즈</a>
+                      <a href="#">키높이</a>
+                      <a href="#">샌들</a>
+                    </div>
+                <!--SHOES MENU-->
+                <!--BAG MENU-->
+                    <div id="mySidenav8" class="sidenav8">
+                      <a href="javascript:void(0)" class="closebtn8" onclick="closeNav()">&times;</a>
+                      <a href="#">클러치백</a>
+                      <a href="#">백팩</a>
+                      <a href="#">토드&#38;크로스백</a>
+                    </div>
+                <!--BAG MENU-->
+                <!--ACC MENU-->
+                    <div id="mySidenav9" class="sidenav9">
+                      <a href="javascript:void(0)" class="closebtn9" onclick="closeNav()">&times;</a>
+                      <a href="#">선글라스/안경</a>
+                      <a href="#">모자</a>
+                      <a href="#">벨트</a>
+                      <a href="#">팔찌/목걸이</a>
+                      <a href="#">양말</a>
+                      <a href="#">타이/스카프</a>
+                    </div>
+                <!--ACC MENU-->
+                <!--SALE MENU-->
+                    <div id="mySidenav10" class="sidenav10">
+                      <a href="javascript:void(0)" class="closebtn10" onclick="closeNav()">&times;</a>
+                      <a href="#">10&#37; SALE</a>
+                      <a href="#">15&#37; SALE</a>
+                      <a href="#">20&#37; SALE</a>
+                      <a href="#">SHOES 20&#37; SALE</a>
+                    </div>
+                <!--SALE MENU-->
+                <div class="hLogo">
+                    <a href="#">
+                        <img src="images/common/cckcap_logo.png" alt="로고">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!--헤더-->
+        <!--container-->
+        <div id="container">
+            <!--mainSlider-->
+            <div class="mainSlider">
+                <div>
+                    <a href="#">
+                        <img src="images/main/slider.jpg" alt="메인이미지1">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="images/main/slider01.jpg" alt="메인이미지2">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="images/main/slider02.jpg" alt="메인이미지3">
+                    </a>
+                </div>
+            </div>
+            <!--mainSlider-->
+            <!--mainCon01-->
+            <div class="mainCon01">
+                <h2><span>NEW ARRIVALS</span></h2>
+                <ul class="con01 cf">
+                    <li>
+                        <div class="con01n1">
+                        <a href="#">
+                        <img src="images/main/new_01.jpg" class="off" alt="신상1">
+                        <img src="images/main/new_01a.jpg" class="on" alt="신상1">
+                            <p>12049T LOGO T-SHIRT</p>
+                        </a>
+                        <span>25,000 won</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="con01n2">
+                        <a href="#">
+                        <img src="images/main/new_02.jpg" class="off" alt="신상2">
+                        <img src="images/main/new_02a.jpg" class="on" alt="신상2">
+                            <p>12059P BANDING SPAN PANTS</p>
+                        </a>
+                        <span>31,000 won</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="con01n3">
+                        <a href="#">
+                            <img src="images/main/new_03.jpg" class="off" alt="신상3">
+                            <img src="images/main/new_03a.jpg" class="on" alt="신상3">
+                            <p>12079T SPREAD T-SHIRT</p>
+                        </a>
+                        <span>39,900 won</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="con01n4">
+                        <a href="#">
+                            <img src="images/main/new_04.jpg" class="off" alt="신상4">
+                            <img src="images/main/new_04a.jpg" class="on" alt="신상4">
+                            <p>12069T OVER PRINTING T-SHIRT</p>
+                        </a>
+                        <span>27,000 won</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="con01n5">
+                        <a href="#">
+                            <img src="images/main/new_05.jpg" class="off" alt="신상5">
+                            <img src="images/main/new_08.jpg" class="on" alt="신상5">
+                            <p>12019T LIGHT SHIRTS JACKET</p>
+                        </a>
+                        <span>29,000 won</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="con01n6">
+                        <a href="#">
+                            <img src="images/main/new_06.jpg" class="off" alt="신상6">
+                            <img src="images/main/new_06a.jpg" class="on" alt="신상6">
+                            <p>11999T SIMPLE ROUND KNIT</p>
+                        </a>
+                        <span>34,000 won</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="con01n7">
+                        <a href="#">
+                            <img src="images/main/new_07.jpg" class="off" alt="신상7">
+                            <img src="images/main/new_07b.jpg" class="on" alt="신상7">
+                            <p>11979T SHORT COLLAR CHECK SHIRT&#42;</p>
+                        </a>
+                        <span>33,000 won</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="con01n8">
+                        <a href="#">
+                            <img src="images/main/new_08.jpg" class="off" alt="신상8">
+                            <img src="images/main/new_05.jpg" class="on" alt="신상8">
+                            <p>12039P LIGHT SWIM PANTS</p>
+                        </a>
+                        <span>23,000 won</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--mainCon01-->
+            <!--mainCon02-->
+            <div class="mainCon02">
+                <h2><span>BEST</span></h2>
+                <ul class="con02 cf">
+                    <li>
+                        <div class="con02b1">
+                        <a href="#">
+                            <img src="images/main/bast06.jpg" class="off" alt="베스트1">
+                            <img src="images/main/bast06a.jpg" class="on" alt="베스트1">
+                            <p>10939O CHECK SUIT JACKET + 10959P CHECK SUIT SLACKS</p>
+                        </a>
+                            <span>134,000 won</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="con02b2">
+                        <a href="#">
+                            <img src="images/main/best02.jpg" class="off" alt="베스트2">
+                            <img src="images/main/best02a.jpg" class="on" alt="베스트2">
+                            <p>브루크 글렌 체크 더블자켓</p>
+                        </a>
+                            <span>85,000 won</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="con02b3">
+                        <a href="#">
+                            <img src="images/main/best03.jpg" class="off" alt="베스트3">
+                            <img src="images/main/best03a.jpg" class="on" alt="베스트3">
+                            <p>턴즈 네츄럴 가디건</p>
+                        </a>
+                            <span>29,000 won</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="con02b4">
+                        <a href="#">
+                            <img src="images/main/best04.jpg" class="off" alt="베스트4">
+                            <img src="images/main/best04a.jpg" class="on" alt="베스트4">
+                            <p>조이 크롭 컷팅 진</p>
+                        </a>
+                            <span>34,000 won</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="con02b5">
+                        <a href="#">
+                            <img src="images/main/best05.jpg" class="off" alt="베스트5">
+                            <img src="images/main/best05a.png" class="on" alt="베스트5">
+                            <p>심플 맥스 긴팔티</p>
+                        </a>
+                            <span>13,500 won</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--mainCon02-->
+        </div>
+        <!--container-->
+        
+        <footer id="footer">
+            <div class="fTop">
+                <div class="inner cf">
+                    <!--푸터메뉴-->
+                    <!--CS CENTER-->
+                    <dl>
+                        <dt>/ CS CENTER</dt>
+                        <dd><a href="#"><img src="images/common/kakao_talk.jpg" alt="카톡상담"></a></dd>
+                        <dd><a href="#"><img src="images/common/kakao_talk02.jpg" alt="친구추가"></a></dd>
+                        <dd>MON - FRI AM 11:00 - PM 05:00 / LUNCH TIME. PM 01:00 - 02:00 / SAT. RED DAY OFF</dd>
+                        <dd>교환/반품주소 : 경기도 고양시 덕양구 화정동 957 고양덕양우체국 디제이2</dd>
+                    </dl>
+                    <!--CS CENTER-->
+
+                    <!--INFO-->
+                    <dl>
+                        <dt>/ BANK INFO</dt>
+                        <dd>우리 1002-453-374078</dd>
+                        <dd>조정구 / 디제이2</dd>
+                    </dl>
+                    <!--INFO-->
+
+                    <!--ABOUT US-->
+                    <dl>
+                        <dt>/ ABOUT US</dt>
+                        <dd><a href="#">HOME &#124; 개인정보취급방침 &#124; AGREEMENT &#124; CUSTOMER Q&#38;A &#124; 개인결제</a></dd>
+                        <dd>COMPANY. LEDAMIE CEO. &#124; JOE JUNGKU &#124; PERSOANL INFOR. MANAGER. JOE JUNGKU</dd>
+                        <dd>BUSINESS NO. 256-10-00354 &#124; 2017-GOYANGDEOGYANG-0781 &#124; <a href="#">&#91;사업자정보확인&#93;</a></dd>
+                        <dd>TEL 070-7424-8005 &#124; E-MAIL. dj2model@naver.com</dd>
+                        <span>COPYRIGHT &#64; DJ2. ALL RIGHTS RESERVED.</span>
+                    </dl>
+                    <!--ABOUT US-->
+                </div>
+            </div>
+            <!--footer-->
+        </footer>
+    </div>
+    <!--전체-->
+    </body>
+</html>
